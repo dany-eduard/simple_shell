@@ -48,7 +48,7 @@ char *reading(void)
 	if (container == EOF)
 	{
 		free(line);
-		exit(EXIT_SUCCESS);
+		exit(STDERR_FILENO);
 	}
 	return (line);
 }
