@@ -39,3 +39,28 @@ int _strcmp(char *s1, char *s2)
 
 	return (c1 - c2);
 }
+
+/**
+* *_strcat - concatenates two strings.
+* @src: The source.
+* @dest: The destination.
+* Return: a pointer to the resulting string dest.
+*/
+char *_strcat(char *dest, char *src)
+{
+	int i = 0;
+	int d = 0;
+
+	while (dest[i])
+		i++;
+
+	while (src[d])
+	{
+		dest[i] = src[d];
+		i++;
+		d++;
+	}
+	dest[i] = '\0';
+
+	return (dest);
+}
