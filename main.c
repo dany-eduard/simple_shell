@@ -118,25 +118,24 @@ int executing(char **tokens, char *line)
 	else
 		_strcat(path, "/"), _strcat(path, line);
 	pid = fork();
-		if (pid == 0)
-		{
-			if (execve(path, tokens, environ) == -1)
-			{
-				errors(tokens);
-				return (0);
-			}
-			exit(EXIT_FAILURE);
-		}
-		else if (pid < 0)
+	if (pid == 0)
+	{
+		if (execve(path, tokens, environ) == -1)
 		{
 			errors(tokens);
 			return (0);
 		}
-		else
-		{
-			do {
-				waitpid(pid, &status, WUNTRACED);
-			} while (!WIFEXITED(status) && !WIFSIGNALED(status));
-		}
-		return (1);
+		exit(EXIT_FAILURE);
+	}
+	else if (pid < 0)
+	{
+		errors(tokens);
+		return (0);
+	}
+	else
+	{
+		do { waitpid(pid, &status, WUNTRACED);
+		} while (!WIFEXITED(status) && !WIFSIGNALED(status));
+	}
+	return (1);
 }
