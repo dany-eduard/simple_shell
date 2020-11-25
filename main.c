@@ -80,7 +80,7 @@ int comparing(char **tokens)
 		return (1);
 
 	if (_strcmp(tokens[0], "exit") == 0)
-		return (EXIT_FAILURE);
+		return (EXIT_SUCCESS);
 
 	if (_strcmp(tokens[0], "env") == 0)
 		_env(tokens);
