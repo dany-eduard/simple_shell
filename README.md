@@ -2,7 +2,7 @@
 
 [![Contributors][contributors-shield]][contributors-url]
 
-This is a simple implementation of the Shell command line. The Simple Shell interprets and executes the command line arguments read from the standard input. Read line by line from a file or the terminal line It then interprets the lines and executes them if the line is a valid command.
+This is a simple implementation of the Shell command line. The Simple Shell interprets and executes the command line arguments read from the standard input. Read line by line from a file or the terminal line It then interprets the lines and executes them if the line is a valid command. The first argument, argument 0 is understood to be the command to be  run by simple shell and arguments following as modifiers or options.
 
 ### File Index
 |File           |Description    |
