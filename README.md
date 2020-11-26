@@ -7,10 +7,13 @@ This is a simple implementation of the Shell command line. The Simple Shell inte
 ### File Index
 |File           |Description    |
 |:-:	          |---	          |
-|               |               |
-|               |               |
-|               |               |
-|               |               |
+|[main.c](https://github.com/dany-eduard/simple_shell/blob/main/main.c)               |This file contains five functions, which are: The main function, as the main function, executes an infinite loop that in turn invoke the ```reading()``` function, this in turn obtains the line written in the standard input thanks to the getline function. Followed by these are ```sigint_handler()```, ```comparing()``` and ```executing()```. These are the 5 functions that allow reading signals and executing commands.               |
+|[cases.c](https://github.com/dany-eduard/simple_shell/blob/main/cases.c)               |There are only two functions here. first ```errors()```, which is invoked to print error messages and ```semicolon()```, which allows handling of separators.               |
+|[split.c](https://github.com/dany-eduard/simple_shell/blob/main/split.c)               |Here is only the ```split()``` function, it breaks the chain into segments or tokens depending on the delimiters that we impose on it, every time it finds one it will tokenize it.               |
+|[string-handling.c](https://github.com/dany-eduard/simple_shell/blob/main/string-handling.c)               |It contains auxiliary functions that facilitate string manipulation.               |
+|[builtin.c](https://github.com/dany-eduard/simple_shell/blob/main/builtin.c)               |First there is the ```_env()``` function, which gets and goes through the enviroment variable to later print it when the user types the ```env``` command in the shell. Then there is the ```_cd()``` function, which in turn executes the ```chdir``` program, allowing the use of commands such as ```cd```, ```mkdir```, etc.               |
+|[sh.h](https://github.com/dany-eduard/simple_shell/blob/main/sh.h)               |Header file               |
+|[man_1_simple_shell](https://github.com/dany-eduard/simple_shell/blob/main/man_1_simple_shell)               |Run man page ```man ./man_1_simple_shell```               |
 
 
 ## Getting started
@@ -29,10 +32,18 @@ Follow these steps to test this project:
 
 
 ### How it work
+<<<<<<< HEAD
  Simple Shell operates in both interactive and non-interactive  mode.  The user  may initiate simple shell and begin working or initate simple shell using commands meant to be run by the program.
  The first argument, argument 0 is understood to be the command to be  run by simple shell and arguments following as modifiers or options.
 
  Simple shell may be invoked with the same functionality in interactive or non-interactive mode.  The user may quit the program  by  typing  "exit", "Ctrl + D", or "Ctrl + C" on the command line.  When the program quits or a command has been executed, simple shell returns with a new prompt: "$ ".
+=======
+Simple Shell operates in both interactive and non-interactive mode. The user  may initiate simple shell and begin working or initate simple shell using commands meant to be run by the program. The first argument, argument 0 is understood to be the command to be  run by simple shell and arguments following as modifiers or options.
+
+Simple shell may be invoked with the same functionality in interactive or non-interactive mode.  The user may quit the program  by  typing  "exit", "Ctrl + D", or "Ctrl + C" on the command line. When the program quits or a command has been executed, simple shell returns with a new prompt: "$ ". Look at the example:
+
+![Example Simple_shell 2020-11-25 194147](https://raw.githubusercontent.com/dany-eduard/simple_shell/main/test/Example%20Simple_shell%202020-11-25%20194147.png)
+>>>>>>> 17f1d851fe2ef44ae90d4ff6b9d743e1f473cf61
 
 ## Testing
 This simple Shell is expected to work in interactive mode:
