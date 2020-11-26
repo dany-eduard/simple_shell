@@ -31,7 +31,9 @@ Follow these steps to test this project:
 ### How it work
 Simple Shell operates in both interactive and non-interactive mode. The user  may initiate simple shell and begin working or initate simple shell using commands meant to be run by the program. The first argument, argument 0 is understood to be the command to be  run by simple shell and arguments following as modifiers or options.
 
-Simple shell may be invoked with the same functionality in interactive or non-interactive mode.  The user may quit the program  by  typing  "exit", "Ctrl + D", or "Ctrl + C" on the command line. When the program quits or a command has been executed, simple shell returns with a new prompt: "$ ".
+Simple shell may be invoked with the same functionality in interactive or non-interactive mode.  The user may quit the program  by  typing  "exit", "Ctrl + D", or "Ctrl + C" on the command line. When the program quits or a command has been executed, simple shell returns with a new prompt: "$ ". Look at the example:
+
+![Example Simple_shell 2020-11-25 194147](https://raw.githubusercontent.com/dany-eduard/simple_shell/main/test/Example%20Simple_shell%202020-11-25%20194147.png)
 
 ## Testing
 This simple Shell is expected to work in interactive mode:
