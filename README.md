@@ -11,8 +11,9 @@ This is a simple implementation of the Shell command line. The Simple Shell inte
 |[cases.c](https://github.com/dany-eduard/simple_shell/blob/main/cases.c)               |There are only two functions here. first ```errors()```, which is invoked to print error messages and ```semicolon()```, which allows handling of separators.               |
 |[split.c](https://github.com/dany-eduard/simple_shell/blob/main/split.c)               |Here is only the ```split()``` function, it breaks the chain into segments or tokens depending on the delimiters that we impose on it, every time it finds one it will tokenize it.               |
 |[string-handling.c](https://github.com/dany-eduard/simple_shell/blob/main/string-handling.c)               |It contains auxiliary functions that facilitate string manipulation.               |
-|[builtin.c](https://github.com/dany-eduard/simple_shell/blob/main/builtin.c)               |               |
-|               |               |
+|[builtin.c](https://github.com/dany-eduard/simple_shell/blob/main/builtin.c)               |First there is the ```_env()``` function, which gets and goes through the enviroment variable to later print it when the user types the ```env``` command in the shell. Then there is the ```_cd()``` function, which in turn executes the ```chdir``` program, allowing the use of commands such as ```cd```, ```mkdir```, etc.               |
+|[sh.h](https://github.com/dany-eduard/simple_shell/blob/main/sh.h)               |Header file               |
+|[man_1_simple_shell](https://github.com/dany-eduard/simple_shell/blob/main/man_1_simple_shell)               |Run man page ```man ./man_1_simple_shell```               |
 
 
 ## Getting started
