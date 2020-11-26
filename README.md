@@ -9,8 +9,8 @@ This is a simple implementation of the Shell command line. The Simple Shell inte
 |:-:	          |---	          |
 |[main.c](https://github.com/dany-eduard/simple_shell/blob/main/main.c)               |This file contains five functions, which are: The main function, as the main function, executes an infinite loop that in turn invoke the ```reading()``` function, this in turn obtains the line written in the standard input thanks to the getline function. Followed by these are ```sigint_handler()```, ```comparing()``` and ```executing()```. These are the 5 functions that allow reading signals and executing commands.               |
 |[cases.c](https://github.com/dany-eduard/simple_shell/blob/main/cases.c)               |There are only two functions here. first ```errors()```, which is invoked to print error messages and ```semicolon()```, which allows handling of separators.               |
-|               |               |
-|               |               |
+|[split.c](https://github.com/dany-eduard/simple_shell/blob/main/split.c)               |Here is only the ```split()``` function, it breaks the chain into segments or tokens depending on the delimiters that we impose on it, every time it finds one it will tokenize it.               |
+
 |               |               |
 |               |               |
 
