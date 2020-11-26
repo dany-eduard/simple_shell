@@ -7,6 +7,8 @@ This is a simple implementation of the Shell command line. The Simple Shell inte
 ### File Index
 |File           |Description    |
 |:-:	          |---	          |
+|[main.c](https://github.com/dany-eduard/simple_shell/blob/main/main.c)               |This file contains five functions, which are: The main function, as the main function, executes an infinite loop that in turn invoke the ```reading()``` function, this in turn obtains the line written in the standard input thanks to the getline function. Followed by these are ```sigint_handler()```, ```comparing()``` and ```executing()```. These are the 5 functions that allow reading signals and executing commands.               |
+
 |               |               |
 |               |               |
 |               |               |
