@@ -29,7 +29,7 @@ Follow these steps to test this project:
 
 
 ### How it work
-Simple Shell operates in both interactive and non-interactive mode.
+Simple Shell operates in both interactive and non-interactive mode. The user  may initiate simple shell and begin working or initate simple shell using commands meant to be run by the program.
 
 ## Testing
 This simple Shell is expected to work in interactive mode:
